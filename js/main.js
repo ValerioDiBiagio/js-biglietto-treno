@@ -10,7 +10,7 @@ const userAge = prompt ("Quanti anni hai?");
 
 const standardPrice = kmAmount * 0.21;
 
-// Calcolare il prezzo in base all'età
+// Calcolare il prezzo in base all'età applicando eventuali sconti
 
 let finalPrice;
 
@@ -22,5 +22,6 @@ if (userAge < 18) {
     finalPrice = standardPrice;
 }
 
-console.log(finalPrice);
+// prezzo reso a due unità decimali
+
 console.log(finalPrice.toFixed(2));
